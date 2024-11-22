@@ -8,3 +8,307 @@
     margin: 0;
     box-sizing: inherit;
 }
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Стили для шапки */
+.site-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.site-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.site-nav li {
+    margin-right: 20px;
+}
+
+.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.site-nav a:hover {
+    color: #ff6347; /* Цвет при наведении */
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-title {
+        margin-bottom: 10px;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+    }
+
+    .site-nav li {
+        margin-bottom: 10px;
+    }
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1920x600') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #e5533d;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Стили для блока "О нас" */
+.about {
+    background-color: #fff;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Стили для блока "Наши услуги" */
+.services {
+    background-color: #f9f9f9;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-item h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1.2em;
+}
+
+/* Контакты */
+.contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact a {
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact a:hover {
+    background-color: #444;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .site-nav li {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1.2em;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-nav a:hover {
+    color: #ff6347;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+}
+
+.social-icon:hover {
+    color: #ff6347;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .site-nav li {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav li {
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+}
